@@ -54,7 +54,7 @@ function pp_ltw2013_uu_cron_cron() {
 					"liste"	=> array(
 									"wiki"  => "Landtagswahl_2013/Hessen/Sammelbalken",
 									"title" => "Landesliste",
-									"uu"    => "http://wiki.piratenpartei.de/Datei:UU-Landesliste-Hessen.pdf",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/0/05/UU-Landesliste-Hessen.pdf",
 					),	
 					18 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Gießen_I",
@@ -69,12 +69,12 @@ function pp_ltw2013_uu_cron_cron() {
 					44 => array(
 									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
 									"title" => "WK 44 (Offenbach Land I)",
-									"uu"    => "http://wiki.piratenpartei.de/Datei:LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_44.pdf",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/1/10/LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_44.pdf",
 					),
 					46 => array(
 									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
 									"title" => "WK 46 (Offenbach Land III)",
-									"uu"    => "http://wiki.piratenpartei.de/Datei:LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_46.pdf",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/b/b7/LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_46.pdf",
 					),
 		);
 
@@ -153,7 +153,7 @@ function pp_ltw2013_uu_cron_cron() {
 					"rendered"	=> date("d.m.Y H:i:s"),
 					"data"      => $pool,
 		);
-		file_put_contents(realpath('.'.base_path()).'/ltw2013_uu_json.php', json_encode($json));
+		file_put_contents(realpath('.'.base_path()).'/ltw2013_uu_json.php', "<?php\nheader('Content-type: application/json');\n?>\n".json_encode($json));
 	
 }
 
