@@ -1,0 +1,160 @@
+<?php
+
+/**
+*
+*/
+function pp_ltw2013_uu_cron_init() {
+}
+
+
+/**
+* Menu for this module
+* @return array An array with this module's settings.
+*/
+function pp_ltw2013_uu_cron_menu() {
+}
+
+
+/**
+* Display help and module information.
+* @param path
+*   Which path of the site we're displaying help.
+* @param arg
+*   Array that holds the current path as would be returned from arg() function.
+* @return
+*   help text for the path.
+*/
+function pp_ltw2013_uu_cron_help($path, $arg) {
+  $output = '';
+  switch ($path) {
+    case "admin/help#pp_ltw2013_uu_cron":
+      $output = '<p>'. t("Lädt periodisch die Daten der Sammelbalken aus dem Wiki und stellt sie als JSON bereit").'</p>';
+      break;
+  }
+  return $output;
+} // function pp_ltw2013_uu_cron_help
+
+
+/**
+* Valid permissions for this module
+* @return array An array of valid permissions for the pp_hessen module
+*/
+#function pp_ltw2013_uu_cron_perm() {
+#  return array('administer pp_ltw2013_uu_cron');
+#} // function pp_ltw2013_uu_cron_perm()
+
+
+/**
+*
+*/
+function pp_ltw2013_uu_cron_cron() {
+	// vars
+		$wiki = "http://wiki.piratenpartei.de";
+		$pool = array(
+					"liste"	=> array(
+									"wiki"  => "Landtagswahl_2013/Hessen/Sammelbalken",
+									"title" => "Landesliste",
+									"uu"    => "http://wiki.piratenpartei.de/Datei:UU-Landesliste-Hessen.pdf",
+					),	
+					18 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Gießen_I",
+									"title" => "WK 18 (Gießen I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/8/8b/Uu_ltw_he_2013_wk_18_giessen_1_formular.pdf",
+					),
+					19 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Gießen_II",
+									"title" => "WK 19 (Gießen II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cc/Uu_ltw_he_2013_wk_19_giessen_2_formular.pdf",
+					),
+					44 => array(
+									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
+									"title" => "WK 44 (Offenbach Land I)",
+									"uu"    => "http://wiki.piratenpartei.de/Datei:LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_44.pdf",
+					),
+					46 => array(
+									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
+									"title" => "WK 46 (Offenbach Land III)",
+									"uu"    => "http://wiki.piratenpartei.de/Datei:LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_46.pdf",
+					),
+		);
+
+	// find sammelbalken
+		$url = $wiki."/wiki//index.php?title=XXX&action=edit";
+		foreach($pool as $idx => $row) {
+			// load wiki source code
+				$ch = curl_init();
+				curl_setopt($ch, CURLOPT_URL,				str_replace("XXX", $row["wiki"], $url));
+				curl_setopt($ch, CURLOPT_HEADER,			0);
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER,	1);
+				curl_setopt($ch, CURLOPT_FOLLOWLOCATION,	1);
+				$data = curl_exec($ch);
+				curl_close($ch);
+				#print_r($data);
+
+			// extract textarea
+				preg_match_all("/<textarea[^>]*>(.*)?<\/textarea>/si", $data, $regs);
+				#print_r($regs);
+				$data2 = $regs[1][0];
+				#$data2 = utf8_decode($data2);
+				#print_r($data2);
+				
+			// extract infos
+				$info = array();
+				preg_match_all("/\|\s*Titel\s*\=\s*(.*)?\s*\|/i", $data2, $regs2);
+				#print_r($regs2);
+				foreach($regs2[1] as $id => $reg) {
+					$info[$id]["title"] = $reg;
+					$info[$id]["title"] = str_replace("_", " ", $info[$id]["title"]);
+					$info[$id]["title"] = explode("(akt", $info[$id]["title"]);
+					$info[$id]["title"] = $info[$id]["title"][0];
+					$info[$id]["title"] = trim($info[$id]["title"]);
+				}
+
+				preg_match_all("/\|\s*ZuSammeln\s*\=\s*(.*)?\s*/i", $data2, $regs2);
+				#print_r($regs2);
+				foreach($regs2[1] as $id => $reg) {
+					$info[$id]["max"] = $reg;
+				}
+
+				preg_match_all("/\|\s*Gesammelt\s*\=\s*(.*)?\s*/i", $data2, $regs2);
+				#print_r($regs2);
+				foreach($regs2[1] as $id => $reg) {
+					$info[$id]["current"] = $reg;
+				}
+
+				preg_match_all("/\|\s*OK\s*\=\s*(.*)?\s*/i", $data2, $regs2);
+				#print_r($regs2);
+				foreach($regs2[1] as $id => $reg) {
+					$info[$id]["save"] = $reg;
+				}
+
+			// add info
+				#print_r($info);
+				if (sizeof($info) == 1) {
+					// one url = one sammelbalken
+					$pool[$idx]["info"] = $info[0];
+				} else {
+					// more than one sammelbalken
+					foreach($info as $data3) {
+						// check for wahlkreis match
+						if (preg_match("/wk\s*".$idx."/i", $data3["title"])) {
+							$pool[$idx]["info"] = $data3;
+						}
+					}
+				}
+
+			// clear wiki
+				unset($pool[$idx]["wiki"]);
+		}
+		#print_r($pool);
+
+	// write json
+		$json = array(
+					"rendered"	=> date("d.m.Y H:i:s"),
+					"data"      => $pool,
+		);
+		file_put_contents(realpath('.'.base_path()).'/ltw2013_uu_json.php', json_encode($json));
+	
+}
+
+?>
