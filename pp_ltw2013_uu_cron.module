@@ -56,6 +56,16 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "Landesliste",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/0/05/UU-Landesliste-Hessen.pdf",
 					),	
+					16 => array(
+									"wiki"  => "HE:Lahn-Dill-Kreis/Wahl_2013/Sammelbalken_16",
+									"title" => "WK 16 (Lahn-Dill I)",
+									"uu"    => "https://dl.dropboxusercontent.com/u/22741570/Piraten/uu_ltw_he_2013_wk_16_lahn_dill_1.pdf",
+					),
+					17 => array(
+									"wiki"  => "HE:Lahn-Dill-Kreis/Wahl_2013/Sammelbalken_17",
+									"title" => "WK 17 (Lahn-Dill II)",
+									"uu"    => "https://dl.dropboxusercontent.com/u/22741570/Piraten/uu_ltw_he_2013_wk_17_lahn_dill_2.pdf",
+					),
 					18 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Gießen_I",
 									"title" => "WK 18 (Gießen I)",
