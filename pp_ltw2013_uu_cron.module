@@ -76,6 +76,21 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 19 (Gießen II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cc/Uu_ltw_he_2013_wk_19_giessen_2_formular.pdf",
 					),
+					40 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Kinzig-Kreis_I",
+									"title" => "WK 40 (Main-Kinzig-Kreis I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/1/19/Formblatt_Unterst%C3%BCtzungsunterschriften_-_WK_40_-_LTW_2013.pdf",
+					),
+					41 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Kinzig-Kreis_II",
+									"title" => "WK 41 (Main-Kinzig-Kreis II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/d/d3/Formblatt_Unterst%C3%BCtzungsunterschriften_-_WK_41_-_LTW_2013.pdf",
+					),
+					42 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Kinzig-Kreis_III",
+									"title" => "WK 42 (Main-Kinzig-Kreis III)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/b/b3/Formblatt_Unterst%C3%BCtzungsunterschriften_-_WK_42_-_LTW_2013.pdf",
+					),					
 					44 => array(
 									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
 									"title" => "WK 44 (Offenbach Land I)",
