@@ -179,18 +179,27 @@ function pp_ltw2013_uu_cron_cron() {
 				#print_r($regs2);
 				foreach($regs2[1] as $id => $reg) {
 					$info[$id]["max"] = $reg;
+				} else {
+					print_r($regs2);
+					$info[$id]["max"] = 0;
 				}
 
 				preg_match_all("/\|\s*Gesammelt\s*\=\s*(.*)?\s*/i", $data2, $regs2);
 				#print_r($regs2);
 				foreach($regs2[1] as $id => $reg) {
 					$info[$id]["current"] = $reg;
+				} else {
+					print_r($regs2);
+					$info[$id]["current"] = 0;
 				}
 
 				preg_match_all("/\|\s*OK\s*\=\s*(.*)?\s*/i", $data2, $regs2);
 				#print_r($regs2);
 				foreach($regs2[1] as $id => $reg) {
 					$info[$id]["save"] = $reg;
+				}else {
+					print_r($regs2);
+					$info[$id]["save"] = 0;
 				}
 
 			// add info
