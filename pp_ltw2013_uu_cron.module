@@ -181,8 +181,9 @@ function pp_ltw2013_uu_cron_cron() {
 					$info[$id]["max"] = $reg;
 				}
 				if (!isset($info[$id]["max"])) {
+					print_r($data2);
 					print_r($regs2);
-					$info[$id]["max"] = 0;
+					$info[$id]["max"] = 1;
 				}
 
 				preg_match_all("/\|\s*Gesammelt\s*\=\s*(.*)?\s*/i", $data2, $regs2);
@@ -191,6 +192,7 @@ function pp_ltw2013_uu_cron_cron() {
 					$info[$id]["current"] = $reg;
 				}
 				if (!isset($info[$id]["current"])) {
+					print_r($data2);
 					print_r($regs2);
 					$info[$id]["current"] = 0;
 				}
@@ -201,6 +203,7 @@ function pp_ltw2013_uu_cron_cron() {
 					$info[$id]["save"] = $reg;
 				}
 				if (!isset($info[$id]["save"])) {
+					print_r($data2);
 					print_r($regs2);
 					$info[$id]["save"] = 0;
 				}
