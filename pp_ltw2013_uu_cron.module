@@ -179,7 +179,8 @@ function pp_ltw2013_uu_cron_cron() {
 				#print_r($regs2);
 				foreach($regs2[1] as $id => $reg) {
 					$info[$id]["max"] = $reg;
-				} else {
+				}
+				if (!isset($info[$id]["max"])) {
 					print_r($regs2);
 					$info[$id]["max"] = 0;
 				}
@@ -188,7 +189,8 @@ function pp_ltw2013_uu_cron_cron() {
 				#print_r($regs2);
 				foreach($regs2[1] as $id => $reg) {
 					$info[$id]["current"] = $reg;
-				} else {
+				}
+				if (!isset($info[$id]["current"])) {
 					print_r($regs2);
 					$info[$id]["current"] = 0;
 				}
@@ -197,7 +199,8 @@ function pp_ltw2013_uu_cron_cron() {
 				#print_r($regs2);
 				foreach($regs2[1] as $id => $reg) {
 					$info[$id]["save"] = $reg;
-				}else {
+				}
+				if (!isset($info[$id]["save"])) {
 					print_r($regs2);
 					$info[$id]["save"] = 0;
 				}
