@@ -62,12 +62,12 @@ function pp_ltw2013_uu_cron_cron() {
 									"uu"    => "http://wiki.piratenpartei.de/Benutzer:FranziL",
 					),
 					3 => array(
-									"wiki"  => "HE:Kassel_Land/Wahl_2013/Sammelbalken_3",
+									"wiki"  => "HE:Kassel_Stadt/Wahl_2013/Sammelbalken_3",
 									"title" => "WK 3 (Kassel Stadt I)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cf/Unterst%C3%BCtzungsunterschriften_PIRATEN_WK3.pdf",
 					),
 					4 => array(
-									"wiki"  => "HE:Kassel_Land/Wahl_2013/Sammelbalken_4",
+									"wiki"  => "HE:Kassel_Stadt/Wahl_2013/Sammelbalken_4",
 									"title" => "WK 4 (Kassel Stadt II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/7/7d/Unterst%C3%BCtzungsunterschriften_PIRATEN_WK4.pdf",
 					),
