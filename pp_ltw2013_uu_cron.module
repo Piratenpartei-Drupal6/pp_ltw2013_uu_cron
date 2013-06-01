@@ -56,6 +56,31 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "Landesliste",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/0/05/UU-Landesliste-Hessen.pdf",
 					),	
+					2 => array(
+									"wiki"  => "HE:Kassel_Land/Wahl_2013/Sammelbalken_2",
+									"title" => "WK 2 (Kassel Land)",
+									"uu"    => "http://wiki.piratenpartei.de/Benutzer:FranziL",
+					),
+					3 => array(
+									"wiki"  => "HE:Kassel_Land/Wahl_2013/Sammelbalken_3",
+									"title" => "WK 3 (Kassel Stadt I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cf/Unterst%C3%BCtzungsunterschriften_PIRATEN_WK3.pdf",
+					),
+					4 => array(
+									"wiki"  => "HE:Kassel_Land/Wahl_2013/Sammelbalken_4",
+									"title" => "WK 4 (Kassel Stadt II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/7/7d/Unterst%C3%BCtzungsunterschriften_PIRATEN_WK4.pdf",
+					),
+					5 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Waldeck-Frankenberg_I",
+									"title" => "WK 5 (Waldeck-Frankenberg I)",
+									"uu"    => "http://wiki.piratenpartei.de/Benutzer:MiB303",
+					),
+					6 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Waldeck-Frankenberg_II",
+									"title" => "WK 6 (Waldeck-Frankenberg II)",
+									"uu"    => "http://wiki.piratenpartei.de/Benutzer:MiB303",
+					),
 					16 => array(
 									"wiki"  => "HE:Lahn-Dill-Kreis/Wahl_2013/Sammelbalken_16",
 									"title" => "WK 16 (Lahn-Dill I)",
@@ -76,6 +101,16 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 19 (Gießen II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cc/Uu_ltw_he_2013_wk_19_giessen_2_formular.pdf",
 					),
+					37 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_IV",
+									"title" => "WK 37 (Frankfurt IV)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/2/25/LTW2013_WK37.PDF",
+					),
+					39 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_VI",
+									"title" => "WK 39 (Frankfurt VI)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/2/24/LTW2013_WK39.PDF",
+					),
 					40 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Kinzig-Kreis_I",
 									"title" => "WK 40 (Main-Kinzig-Kreis I)",
@@ -91,6 +126,11 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 42 (Main-Kinzig-Kreis III)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/b/b3/Formblatt_Unterst%C3%BCtzungsunterschriften_-_WK_42_-_LTW_2013.pdf",
 					),					
+					43 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Offenbach",
+									"title" => "WK 43 (Offenbach)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/a/ae/Unterstuetzung_Gregory_Engels.jpg",
+					),
 					44 => array(
 									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
 									"title" => "WK 44 (Offenbach Land I)",
