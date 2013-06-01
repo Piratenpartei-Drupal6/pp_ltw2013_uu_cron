@@ -128,7 +128,7 @@ function pp_ltw2013_uu_cron_cron() {
 					),					
 					43 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Offenbach",
-									"title" => "WK 43 (Offenbach)",
+									"title" => "WK 43 (Offenbach Stadt)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/a/ae/Unterstuetzung_Gregory_Engels.jpg",
 					),
 					44 => array(
