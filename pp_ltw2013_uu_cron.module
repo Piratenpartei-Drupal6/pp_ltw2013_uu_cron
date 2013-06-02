@@ -81,6 +81,16 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 6 (Waldeck-Frankenberg II)",
 									"uu"    => "http://wiki.piratenpartei.de/Benutzer:MiB303",
 					),
+					7 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Schwalm-Eder_I",
+									"title" => "WK 7 (Schwalm-Eder I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cc/UU_LTW_HE_Wahlkreis_7.pdf",
+					),
+					8 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Schwalm-Eder_II",
+									"title" => "WK 8 (Schwalm-Eder II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/e7/UU_LTW_HE_Wahlkreis_8.pdf",
+					),
 					16 => array(
 									"wiki"  => "HE:Lahn-Dill-Kreis/Wahl_2013/Sammelbalken_16",
 									"title" => "WK 16 (Lahn-Dill I)",
