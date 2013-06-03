@@ -111,6 +111,21 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 19 (Gießen II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cc/Uu_ltw_he_2013_wk_19_giessen_2_formular.pdf",
 					),
+					25 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Wetterau_I",
+									"title" => "WK 25 (Wetterau I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/d/d4/Uu_ltw_he_2013_wahlkreis_25_wetterau_1.pdf",
+					),
+					26 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Wetterau_II",
+									"title" => "WK 26 (Wetterau II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/e9/Uu_ltw_he_2013_wahlkreis_26_wetterau_2.pdf",
+					),
+					27 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Wetterau_III",
+									"title" => "WK 27 (Wetterau III)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/6/67/Uu_ltw_he_2013_wahlkreis_27_wetterau_3.pdf",
+					),
 					37 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_IV",
 									"title" => "WK 37 (Frankfurt IV)",
