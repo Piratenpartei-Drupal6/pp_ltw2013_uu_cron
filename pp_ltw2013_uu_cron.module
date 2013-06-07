@@ -56,6 +56,8 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "Landesliste",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/0/05/UU-Landesliste-Hessen.pdf",
 					),	
+
+					/* Kassel */
 					2 => array(
 									"wiki"  => "HE:Kassel_Land/Wahl_2013/Sammelbalken_2",
 									"title" => "WK 2 (Kassel Land)",
@@ -71,6 +73,8 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 4 (Kassel Stadt II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/7/7d/Unterst%C3%BCtzungsunterschriften_PIRATEN_WK4.pdf",
 					),
+					
+					/* Waldeck-Frankenberg */
 					5 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Waldeck-Frankenberg_I",
 									"title" => "WK 5 (Waldeck-Frankenberg I)",
@@ -81,6 +85,8 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 6 (Waldeck-Frankenberg II)",
 									"uu"    => "http://wiki.piratenpartei.de/Benutzer:MiB303",
 					),
+					
+					/* Schwalm-Eder */
 					7 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Schwalm-Eder_I",
 									"title" => "WK 7 (Schwalm-Eder I)",
@@ -91,6 +97,8 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 8 (Schwalm-Eder II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/e7/UU_LTW_HE_Wahlkreis_8.pdf",
 					),
+					
+					/* Lahn-Dill */
 					16 => array(
 									"wiki"  => "HE:Lahn-Dill-Kreis/Wahl_2013/Sammelbalken_16",
 									"title" => "WK 16 (Lahn-Dill I)",
@@ -101,6 +109,8 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 17 (Lahn-Dill II)",
 									"uu"    => "https://dl.dropboxusercontent.com/u/22741570/Piraten/uu_ltw_he_2013_wk_17_lahn_dill_2.pdf",
 					),
+					
+					/* Gießen */
 					18 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Gießen_I",
 									"title" => "WK 18 (Gießen I)",
@@ -111,6 +121,8 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 19 (Gießen II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cc/Uu_ltw_he_2013_wk_19_giessen_2_formular.pdf",
 					),
+					
+					/* Wetterau */
 					25 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Wetterau_I",
 									"title" => "WK 25 (Wetterau I)",
@@ -126,16 +138,40 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 27 (Wetterau III)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/6/67/Uu_ltw_he_2013_wahlkreis_27_wetterau_3.pdf",
 					),
+					
+					/* Frankfurt */
+					34 => array(
+									"wiki"  => "http://wiki.piratenpartei.de/HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_I",
+									"title" => "WK 34 (Frankfurt I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/6/6d/LTW2013_WK34.PDF",
+					),
+					35 => array(
+									"wiki"  => "http://wiki.piratenpartei.de/HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_II",
+									"title" => "WK 35 (Frankfurt II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/4/40/LTW2013_WK35.PDF",
+					),
+					36 => array(
+									"wiki"  => "http://wiki.piratenpartei.de/HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_III",
+									"title" => "WK 36 (Frankfurt III)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/1/13/LTW2013_WK36.PDF",
+					),
 					37 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_IV",
 									"title" => "WK 37 (Frankfurt IV)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/2/25/LTW2013_WK37.PDF",
+					),
+					38 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_V",
+									"title" => "WK 38 (Frankfurt V)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/a/a6/LTW2013_WK38.PDF",
 					),
 					39 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Frankfurt_am_Main_VI",
 									"title" => "WK 39 (Frankfurt VI)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/2/24/LTW2013_WK39.PDF",
 					),
+					
+					/* Main-Kinzig */
 					40 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Kinzig-Kreis_I",
 									"title" => "WK 40 (Main-Kinzig-Kreis I)",
@@ -150,7 +186,9 @@ function pp_ltw2013_uu_cron_cron() {
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Kinzig-Kreis_III",
 									"title" => "WK 42 (Main-Kinzig-Kreis III)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/b/b3/Formblatt_Unterst%C3%BCtzungsunterschriften_-_WK_42_-_LTW_2013.pdf",
-					),					
+					),				
+
+					/* Offenbach */
 					43 => array(
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Offenbach",
 									"title" => "WK 43 (Offenbach Stadt)",
@@ -165,6 +203,18 @@ function pp_ltw2013_uu_cron_cron() {
 									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
 									"title" => "WK 46 (Offenbach Land III)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/b/b7/LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_46.pdf",
+					),
+					
+					/* GRoß-Gerau */
+					47 => array(
+									"wiki"  => "http://wiki.piratenpartei.de/HE:Wahlen_2013/UU/Sammelbalken/Gro%C3%9F-Gerau_I",
+									"title" => "WK 47 (Groß-Gerau I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/9/9e/Formblatt_UU_Piratenpartei_WK_47.pdf",
+					),
+					48 => array(
+									"wiki"  => "http://wiki.piratenpartei.de/HE:Wahlen_2013/UU/Sammelbalken/Gro%C3%9F-Gerau_I",
+									"title" => "WK 48 (Groß-Gerau II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/f/f6/Formblatt_UU_Piratenpartei_WK_48.pdf",
 					),
 		);
 
