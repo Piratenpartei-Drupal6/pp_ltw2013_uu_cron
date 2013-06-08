@@ -97,6 +97,18 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 8 (Schwalm-Eder II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/e7/UU_LTW_HE_Wahlkreis_8.pdf",
 					),
+
+					/* Marburg-Biedenkopf */
+					12 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Marburg-Biedenkopf_I",
+									"title" => "WK 12 (Marburg-Biedenkopf I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/7/72/UU_Landtagswahlkreis12_2013.pdf",
+					),
+					13 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Marburg-Biedenkopf_II",
+									"title" => "WK 13 (Marburg-Biedenkopf II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/ec/UU_LTW_Wahlkreis_13_2013.pdf",
+					),
 					
 					/* Lahn-Dill */
 					16 => array(
@@ -121,6 +133,19 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 19 (Gießen II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/c/cc/Uu_ltw_he_2013_wk_19_giessen_2_formular.pdf",
 					),
+
+					/* Hochtaunus */
+					23 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Hochtaunus_I",
+									"title" => "WK 23 (Hochtaunus I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/9/9c/UU-Formular_LTW2013_WK23.pdf",
+					),
+					24 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Hochtaunus_II",
+									"title" => "WK 24 (Hochtaunus II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/e1/UU-Formular_LTW2013_WK24.pdf",
+					),
+
 					
 					/* Wetterau */
 					25 => array(
@@ -137,6 +162,42 @@ function pp_ltw2013_uu_cron_cron() {
 									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Wetterau_III",
 									"title" => "WK 27 (Wetterau III)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/6/67/Uu_ltw_he_2013_wahlkreis_27_wetterau_3.pdf",
+					),
+					
+					/*  Rheingau-Taunus */
+					28 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Rheingau-Taunus_I",
+									"title" => "WK 28 (Rheingau-Taunus I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/a/aa/Uu_ltw_he_2013_wk_28_rheingau_taunus_1_formular.pdf",
+					),
+					29 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Rheingau-Taunus_II",
+									"title" => "WK 29 (Rheingau-Taunus II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/e0/Uu_ltw_he_2013_wk_29_rheingau_taunus_2_formular.pdf",
+					),
+					
+					/*  Wiesbaden */
+					30 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Wiesbaden_I",
+									"title" => "WK 30 (Wiesbaden I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/9/94/UU.LTW13.WK30.PIRATEN.pdf",
+					),
+					31 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Wiesbaden_II",
+									"title" => "WK 31 (Wiesbaden II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/8/82/UU.LTW13.WK31.PIRATEN.pdf",
+					),
+					
+					/*  Main-Taunus */
+					32 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Taunus_I",
+									"title" => "WK 32 (Main-Taunus I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/7/7d/UU_Wahl_Guth_und_Kysel.pdf",
+					),
+					33 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Main-Taunus_II",
+									"title" => "WK 33 (Main-Taunus II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/6/60/UU_Wahl_Preussler_und_Tillger.pdf",
 					),
 					
 					/* Frankfurt */
@@ -216,6 +277,41 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 48 (Groß-Gerau II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/f/f6/Formblatt_UU_Piratenpartei_WK_48.pdf",
 					),
+
+					/* Darmstadt */
+					49 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Darmstadt-Stadt_I",
+									"title" => "WK 49 (Darmstadt-Stadt I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/1/19/LTW2013-WK49-UU.pdf",
+					),
+					51 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Darmstadt-Dieburg_I",
+									"title" => "WK 51 (Darmstadt-Dieburg I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/3/35/LTW2013-WK51-UU.pdf",
+					),
+					52 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Darmstadt-Dieburg_II",
+									"title" => "WK 52 (Darmstadt-Dieburg II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/d/df/LTW2013-WK52-UU.pdf",
+					),
+
+					/* Süden */
+					53 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Odenwald",
+									"title" => "WK 53 (Odenwald)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/d/d9/UU-LTW-HE13-53-Odenwald.pdf",
+					),
+					54 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Bergstra%C3%9Fe_I",
+									"title" => "WK 54 (Bergstraße I)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/4/4c/LTW2013-WK54_I-UU.pdf",
+					),
+					55 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Bergstra%C3%9Fe_II",
+									"title" => "WK 55 (Bergstraße II)",
+									"uu"    => "http://wiki.piratenpartei.de/wiki/images/7/7f/HE-LTW-2013-WK55-UU.pdf",
+					),
+					
 		);
 
 	// find sammelbalken
