@@ -256,12 +256,12 @@ function pp_ltw2013_uu_cron_cron() {
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/a/ae/Unterstuetzung_Gregory_Engels.jpg",
 					),
 					44 => array(
-									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
+									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken_WK44",
 									"title" => "WK 44 (Offenbach Land I)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/1/10/LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_44.pdf",
 					),
 					46 => array(
-									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken",
+									"wiki"  => "HE:Kreisverband_Offenbach_Land/Landtagswahl_2013/Sammelbalken_WK46",
 									"title" => "WK 46 (Offenbach Land III)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/b/b7/LTWHE13_Formblatt_Unterst%C3%BCtzungsunterschriften_WK_46.pdf",
 					),
