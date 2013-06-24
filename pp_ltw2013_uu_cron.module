@@ -273,7 +273,7 @@ function pp_ltw2013_uu_cron_cron() {
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/9/9e/Formblatt_UU_Piratenpartei_WK_47.pdf",
 					),
 					48 => array(
-									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Gro%C3%9F-Gerau_I",
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Gro%C3%9F-Gerau_II",
 									"title" => "WK 48 (Groß-Gerau II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/f/f6/Formblatt_UU_Piratenpartei_WK_48.pdf",
 					),
