@@ -422,12 +422,12 @@ function pp_ltw2013_uu_cron_cron() {
 					"data"      => $pool,
 		);
 		$content = json_encode($json);
-		$last_modified_time = gmdate("D, d M Y H:i:s");
+		$last_modified = gmdate("D, d M Y H:i:s");
 		$etag = md5($content); 
 
 		$php = file_get_contents(drupal_get_path('module', 'pp_ltw2013_uu_cron')."/ltw2013_uu_json.php.txt");
 		$php = str_replace("@@content@@", $content, $php);
-		$php = str_replace("@@content@@", $content, $php);
+		$php = str_replace("@@last-modified@@", $last_modified, $php);
 		$php = str_replace("@@etag@@", $etag, $php);
 		
 		file_put_contents(realpath('.'.base_path()).'/ltw2013_uu_json.php', $php);
