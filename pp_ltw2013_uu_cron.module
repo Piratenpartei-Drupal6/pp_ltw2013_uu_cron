@@ -425,7 +425,7 @@ function pp_ltw2013_uu_cron_cron() {
 		$last_modified_time = gmdate("D, d M Y H:i:s");
 		$etag = md5($content); 
 
-		$php = file_get_contents("ltw2013_uu_json.php.txt");
+		$php = file_get_contents(drupal_get_path('module', 'pp_ltw2013_uu_cron')."/ltw2013_uu_json.php.txt");
 		$php = str_replace("@@content@@", $content, $php);
 		$php = str_replace("@@content@@", $content, $php);
 		$php = str_replace("@@etag@@", $etag, $php);
