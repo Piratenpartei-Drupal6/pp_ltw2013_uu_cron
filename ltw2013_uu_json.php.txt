@@ -2,6 +2,9 @@
 	header("Content-type: application/json");
 	header("Last-Modified: @@last-modified@@ GMT");
 	header("Etag: @@etag@@");
+	header("Pragma: public");
+	header("Cache-Control: maxage=@@maxage@@");
+	header("Expires: @@expires@@ GMT");
 
 	if (@strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) == "@@time@@" ||
 		trim($_SERVER['HTTP_IF_NONE_MATCH']) == "@@etag@@") {
