@@ -409,7 +409,16 @@ function pp_ltw2013_uu_cron_cron() {
 					"rendered"	=> date("d.m.Y H:i:s"),
 					"data"      => $pool,
 		);
-		file_put_contents(realpath('.'.base_path()).'/ltw2013_uu_json.php', "<?php\nheader('Content-type: application/json');\n?>\n".json_encode($json));
+		$content = json_encode($json);
+		$last_modified_time = gmdate("D, d M Y H:i:s");
+		$etag = md5($content); 
+
+		$php = file_get_contents("ltw2013_uu_json.php.txt");
+		$php = str_replace("@@content@@", $content, $php);
+		$php = str_replace("@@content@@", $content, $php);
+		$php = str_replace("@@etag@@", $etag, $php);
+		
+		file_put_contents(realpath('.'.base_path()).'/ltw2013_uu_json.php', $php);
 	
 }
 
