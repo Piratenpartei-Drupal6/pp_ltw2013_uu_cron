@@ -109,6 +109,18 @@ function pp_ltw2013_uu_cron_cron() {
 									"title" => "WK 13 (Marburg-Biedenkopf II)",
 									"uu"    => "http://wiki.piratenpartei.de/wiki/images/e/ec/UU_LTW_Wahlkreis_13_2013.pdf",
 					),
+
+					/* Fulda */
+					14 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Fulda_I",
+									"title" => "WK 14 (Fulda I)",
+									"uu"    => "https://wiki.piratenpartei.de/Datei:14_Fulda_I.pdf",
+					),
+					15 => array(
+									"wiki"  => "HE:Wahlen_2013/UU/Sammelbalken/Fulda_II",
+									"title" => "WK 15 (Fulda II)",
+									"uu"    => "https://wiki.piratenpartei.de/Datei:15_Fulda_II.pdf",
+					),
 					
 					/* Lahn-Dill */
 					16 => array(
