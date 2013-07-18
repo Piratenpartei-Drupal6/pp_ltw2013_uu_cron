@@ -3,7 +3,7 @@
 	header("Last-Modified: @@last-modified@@ GMT");
 	header("Etag: @@etag@@");
 
-	if (@strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) == "@@last-modified@@" ||
+	if (@strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) == "@@time@@" ||
 		trim($_SERVER['HTTP_IF_NONE_MATCH']) == "@@etag@@") {
 		header("HTTP/1.1 304 Not Modified");
 		exit;
